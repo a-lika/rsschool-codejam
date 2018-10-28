@@ -2,7 +2,7 @@ function sum(a, b) {
     return a + b;
 };
 
-const make = (...arg) => {
+module.exports = function make(...arg) {
     const array = [];
     array.push(...arg);
     function toSummarize(...args) {
